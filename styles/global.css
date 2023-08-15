@@ -1,4 +1,6 @@
 @import "root.css";
+@import "button.css";
+@import "card.css";
 
 * {
     margin: 0;
@@ -7,5 +9,6 @@
 
 body {
     font-family: var(--montserrat);
-    background: var(--bgColor)''
+    background: var(--grey);
+    color: var(--black);
 }

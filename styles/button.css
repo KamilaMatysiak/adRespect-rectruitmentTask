@@ -1,0 +1,47 @@
+.button {
+    display: flex;
+    align-items: center;
+    padding: 12px 22px 14px 22px;
+    gap: 8px;
+    border-radius: 200px;
+    font-family: var(--inter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+}
+
+.button--green {
+    background: var(--green);
+    color: var(--grey);
+}
+
+.button--white {
+    background: var(--grey);
+    color: var(--green);
+}
+
+.button--outlined-green {
+    border: 1px solid var(--green);
+    color: var(--green);
+}
+
+.button--outlined-white {
+    border: 1px solid var(--grey);
+    color: var(--grey);
+}
+
+.button--outlined-black {
+    border: 1px solid var(--black);
+    color: var(--black);
+}
+
+.button--link {
+    background: none;
+    padding: 0 0 4px 0;
+    gap: 10px;
+    border-radius: 0;
+    border-bottom: 1px solid var(--green);
+    color: var(--green);
+}
