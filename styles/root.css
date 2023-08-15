@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600&display=swap');
+
+:root {
+    /*fonts*/
+    --inter: 'Inter', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+
+    /*colors*/
+    --white: #fff;
+    --grey: #F5F0EC;
+    --beige: #DCC1AB;
+    --green: #1B5B31;
+    --black: #111111;
+}
