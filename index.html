@@ -14,15 +14,20 @@
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
   </head>
   <body>
-    <header class="w-full">
-      <nav class="flex justify-between align-center py-6 w-5/6 max-w-[1440px] mx-auto">
+    <header class="w-full  bg-white">
+      <nav class="flex justify-between items-center py-6 w-5/6 max-w-[1440px] mx-auto">
         <img src="assets/img/giarddesign.svg" alt="giarddesign logo"/>
         <div class="flex justify-between gap-12">
-            <a class="flex">Oferta <span class="material-symbols-outlined">expand_more</span></a>
-            <a>O firmie</a>
-            <a>Realizacje</a>
-            <a>Kontakt</a>
-            <a><span class="material-symbols-outlined">search</span></a>
+            <a href="#" class="nav__link flex">Oferta <span class="material-symbols-outlined">expand_more</span></a>
+            <a href="#" class="nav__link">O firmie</a>
+            <a href="#" class="nav__link">Realizacje</a>
+            <a href="#" class="nav__link">Kontakt</a>
+            <a href="#" class="nav__link pr-3">
+                <div class="search-bar">
+                    <button class="search-bar__button"><span class="material-symbols-outlined">search</span></button>
+                    <input class="search-bar__input" placeholder="Szukaj..."/>
+                </div>
+            </a>
         </div>
       </nav>
     </header>
