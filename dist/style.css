@@ -15,8 +15,8 @@
 .button {
   display: flex;
   align-items: center;
-  padding: 12px 22px 14px 22px;
-  gap: 8px;
+  padding: 12px 24px 14px 24px;
+  gap: 10px;
   border-radius: 200px;
   font-family: var(--inter);
   font-size: 16px;
@@ -737,6 +737,10 @@ video {
   inset-inline-end: 0.25rem;
 }
 
+.right-0{
+  right: 0px;
+}
+
 .isolate{
   isolation: isolate;
 }
@@ -898,8 +902,33 @@ video {
   display: none;
 }
 
-.w-1\/2{
-  width: 50%;
+.aspect-video{
+  aspect-ratio: 16 / 9;
+}
+
+.aspect-square{
+  aspect-ratio: 1 / 1;
+}
+
+.h-\[737px\]{
+  height: 737px;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-fit{
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+.h-\[757px\]{
+  height: 757px;
+}
+
+.w-2\/6{
+  width: 33.333333%;
 }
 
 .w-5\/6{
@@ -910,24 +939,12 @@ video {
   width: 100%;
 }
 
-.w-4\/6{
-  width: 66.666667%;
-}
-
-.w-2\/6{
-  width: 33.333333%;
-}
-
-.w-3\/6{
-  width: 50%;
+.max-w-\[500px\]{
+  max-width: 500px;
 }
 
 .max-w-\[600px\]{
   max-width: 600px;
-}
-
-.max-w-\[700px\]{
-  max-width: 700px;
 }
 
 .flex-shrink{
