@@ -16,3 +16,29 @@ body {
     background: var(--grey);
     color: var(--black);
 }
+
+.section {
+    width: 100%;
+}
+
+.section .section__nav {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 18px */
+    letter-spacing: -0.12px;
+}
+
+.section .section__header {
+    font-family: var(--montserrat);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 115%; /* 55.2px */
+    letter-spacing: -1.44px; 
+}
+
+.section .section__header--decorator {
+    font-family: var(--inter);
+    font-style: italic;
+}
