@@ -6,9 +6,9 @@ module.exports = {
     colors: {
       white: "var(--white)",
       beige: "var(--beige)",
+      grey: "var(--grey)",
       black: "var(--black)",
       green: "var(--green)",
-      grey: "var(--grey)",
     },
     fontFamily: {
       sans: "var(--inter)",

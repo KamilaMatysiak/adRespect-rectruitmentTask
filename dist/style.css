@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Montserrat:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Montserrat:wght@300;400;500;600&display=swap');
 
 :root {
   /*fonts*/
@@ -786,19 +786,14 @@ video {
   margin-right: auto;
 }
 
+.my-10{
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+
 .my-11{
   margin-top: 2.75rem;
   margin-bottom: 2.75rem;
-}
-
-.my-28{
-  margin-top: 7rem;
-  margin-bottom: 7rem;
-}
-
-.my-\[120px\]{
-  margin-top: 120px;
-  margin-bottom: 120px;
 }
 
 .my-8{
@@ -806,24 +801,51 @@ video {
   margin-bottom: 2rem;
 }
 
+.my-\[120px\]{
+  margin-top: 120px;
+  margin-bottom: 120px;
+}
+
+.my-\[60px\]{
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.my-\[62px\]{
+  margin-top: 62px;
+  margin-bottom: 62px;
+}
+
+.mb-24{
+  margin-bottom: 6rem;
+}
+
 .mr-9{
   margin-right: 2.25rem;
+}
+
+.mt-16{
+  margin-top: 4rem;
 }
 
 .mt-2{
   margin-top: 0.5rem;
 }
 
+.mt-6{
+  margin-top: 1.5rem;
+}
+
 .mt-7{
   margin-top: 1.75rem;
 }
 
-.mt-24{
-  margin-top: 6rem;
+.mt-8{
+  margin-top: 2rem;
 }
 
-.mt-16{
-  margin-top: 4rem;
+.mt-\[120px\]{
+  margin-top: 120px;
 }
 
 .box-border{
@@ -933,8 +955,16 @@ video {
   height: 737px;
 }
 
+.w-1\/6{
+  width: 16.666667%;
+}
+
 .w-2\/6{
   width: 33.333333%;
+}
+
+.w-3\/6{
+  width: 50%;
 }
 
 .w-4\/6{
@@ -949,8 +979,12 @@ video {
   width: 100%;
 }
 
-.w-3\/6{
-  width: 50%;
+.max-w-\[1440px\]{
+  max-width: 1440px;
+}
+
+.max-w-\[250px\]{
+  max-width: 250px;
 }
 
 .max-w-\[500px\]{
@@ -1483,6 +1517,10 @@ video {
 
 .gap-16{
   gap: 4rem;
+}
+
+.gap-6{
+  gap: 1.5rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]){
@@ -2036,9 +2074,32 @@ video {
      object-fit: scale-down;
 }
 
+.px-\[110px\]{
+  padding-left: 110px;
+  padding-right: 110px;
+}
+
+.py-20{
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .py-6{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+}
+
+.py-\[120px\]{
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.pl-12{
+  padding-left: 3rem;
+}
+
+.pt-\[120px\]{
+  padding-top: 120px;
 }
 
 .text-left{
@@ -2101,9 +2162,17 @@ video {
   font-family: var(--montserrat);
 }
 
+.font-sans{
+  font-family: var(--inter);
+}
+
 .text-6xl{
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-\[40px\]{
+  font-size: 40px;
 }
 
 .text-base{
@@ -2113,6 +2182,10 @@ video {
 
 .font-bold{
   font-weight: 700;
+}
+
+.font-light{
+  font-weight: 300;
 }
 
 .font-medium{
@@ -2191,12 +2264,12 @@ video {
   color: rgb(51 102 153 / .35);
 }
 
-.text-white{
-  color: var(--white);
-}
-
 .text-green{
   color: var(--green);
+}
+
+.text-grey{
+  color: var(--grey);
 }
 
 .underline{
@@ -2559,7 +2632,7 @@ body {
 .section .section__text {
   font-size: 16px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 150%;
   /* 24px */
   letter-spacing: -0.16px;

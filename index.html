@@ -4,10 +4,6 @@
     <title>GiardDesign</title>
     <link rel="icon" type="image/svg" href="assets/icons/favicon.svg" />
     <link rel="stylesheet" type="text/css" href="dist/style.css"/>
-
-    <!--Debug: DELETE LATER-->
-    <link rel="stylesheet" type="text/css" href="styles/global.css"/>
-
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
     <meta charset="UTF-8" />
@@ -19,7 +15,7 @@
   </head>
   <body>
     <header class="w-full">
-      <nav class="flex justify-between align-center py-6 w-5/6 mx-auto">
+      <nav class="flex justify-between align-center py-6 w-5/6 max-w-[1440px] mx-auto">
         <img src="assets/img/giarddesign.svg" alt="giarddesign logo"/>
         <div class="flex justify-between gap-12">
             <a class="flex">Oferta <span class="material-symbols-outlined">expand_more</span></a>
@@ -32,7 +28,7 @@
     </header>
 
     <section class="section relative h-[737px] flex bg-beige">
-        <div class="w-5/6 m-auto flex justify-between ">
+        <div class="w-5/6 max-w-[1440px] m-auto flex justify-between ">
             <div class="max-w-[600px]">
                 <div class="max-w-[500px]">
                     <h1 class="text-6xl font-medium font-heading">Nowoczesna aranżacja Twojego ogrodu </h1>
@@ -53,14 +49,14 @@
     </section>
 
     <section class="section my-[120px]">
-        <div class="w-4/6 mx-auto">
+        <div class="w-4/6 max-w-[1440px] mx-auto">
             <div class="max-w-[709px]">
                 <h5 class="section__nav text-green">Oferta</h5>
                 <h1 class="section__header">Działamy <span class="section__header--decorator">kompleksowo</span></h1>
                 <p class="section__text my-8">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
             </div>
         </div>
-        <div class="flex justify-around mx-auto mt-16 w-5/6 gap-16">
+        <div class="flex justify-around mx-auto mt-16 w-5/6 max-w-[1440px] gap-16">
             <div class="card">
                 <img class="card__icon" src="assets/icons/offer-pencil.svg" alt="Projekty"/>
                 <h2 class="card__header">Projekty</h2>
@@ -73,7 +69,7 @@
                 <p class="card__text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
                 <button class="button button--green button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
             </div>
-            <div class="card ">
+            <div class="card">
                 <img class="card__icon" src="assets/icons/offer-stars.svg" alt="Realizacje"/>
                 <h2 class="card__header">Realizacje</h2>
                 <p class="card__text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
@@ -82,62 +78,70 @@
         </div>
     </section>
 
-    <section class="section flex bg-green text-white">
-        <img src="assets/img/about.webp"/>
-        <div class="w-2/6 m-auto">
-            <div class="max-w-[600px]">
+    <section class="section flex bg-green text-grey">
+        <div class="w-3/6">
+            <img class="object-contain aspect-square" src="assets/img/about.webp"/>
+        </div>
+        <div class="w-2/6 max-w-[1440px] m-auto">
+            <div class="max-w-[500px]">
             <h5 class="section__nav">O firmie</h5>
-            <h1 class="section__header">Tworzymy z <span class="section__header--decorator">pasją</span></h1>
-            <p>Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
-            <button class="button button--outlined-white">Poznaj nas bliżej <span class="material-symbols-outlined">arrow_forward</span></button>
+            <h1 class="section__header max-w-[250px]">Tworzymy z <span class="section__header--decorator">pasją</span></h1>
+            <p class="section__text my-10">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
+            <button class="button button--outlined-white mt-8">Poznaj nas bliżej <span class="material-symbols-outlined">arrow_forward</span></button>
         </div>
     </div>
     </section>
 
-    <section class="section">
-        <div>
-            <h5 class="section__nav">Realizacje</h5>
+    <section class="section bg-beige pt-[120px]">
+        <div class="w-5/6 mx-auto pl-12 max-w-[1440px]">
+            <h5 class="section__nav text-green">Realizacje</h5>
             <h1 class="section__header">Nasze <span class="section__header--decorator">projekty</span></h1>
-            <div>Mansonry</div>
-            <button class="button button--outlined-black">Rozwiń <span class="material-symbols-outlined">arrow_downward</span></button>
-        </div>   
+        </div> 
+        <div class="w-full flex flex-col items-center">
+            <div>TO-DO: Mansonry</div>
+            <button class="button button--outlined-black mb-24">Rozwiń <span class="material-symbols-outlined">arrow_downward</span></button>
+       </div>  
     </section>
 
-    <section  class="section" id="contact">
-        <div class="flex w-5/6 mx-auto justify-between bg-green text-white">
-            <h1 class="section__header">Zostańmy w kontakcie! Znajdziesz nas na <span class="section__header--decorator" >Instagramie.</span></h1>
-            <div>
-                <p>Śledź nasze najnowsze realizacje!</p>
-                <button class="button button--white">Instagram</button>
+    <section  class="section my-[60px]" id="contact">
+        <div class="w-5/6 max-w-[1440px] mx-auto bg-green text-grey">
+            <div class="flex justify-between px-[110px] py-[120px]">
+                <h1 class="text-[40px] font-heading font-light max-w-[600px] align-bottom">Zostańmy w kontakcie! Znajdziesz nas na <span class="font-sans italic" >Instagramie.</span></h1>
+                <div class="w-1/6 align-bottom">
+                    <p class="text-base font-light m-auto">Śledź nasze najnowsze realizacje!</p>
+                    <button class="button button--white mt-6">Instagram</button>
+                </div>
             </div>
         </div>
     </section>
 
-    <footer class="bg-black text-white">
-        <div class="w-5/6 mx-auto">
-            <div class="flex justify-between">
-                <img src="assets/img/giarddesign.svg"/>
-                <div class="flex">
-                    <p>Daj znać, co możemy dla Ciebie zrobić!</p>
+    <footer class="bg-black text-grey">
+        <div class="w-5/6 mx-auto py-20">
+            <div class="flex justify-between items-center">
+                <img src="assets/img/giarddesign-light.svg"/>
+                <div class="flex items-center gap-6">
+                    <p class="text-base">Daj znać, co możemy dla Ciebie zrobić!</p>
                     <button class="button button--green">Skontaktuj się z nami</button>
                 </div>
             </div>
 
+            <hr class="w-full my-[62px]"/>
+
             <div class="flex justify-between">
-                <div class="flex">
+                <div class="flex gap-12">
                     <a>Kontakt</a>
                     <a>Instagram</a>
                     <a>Facebook</a>
                     <a>LinkedIn</a>
                 </div>
 
-                <div class="flex">
+                <div class="flex gap-12">
                     <p>000-000-000</p>
                     <p>giarddesign@kontakt.pl</p>
                 </div>
             </div>
 
-            <div class="flex justify-between">
+            <div class="flex justify-between mt-[120px]">
                 <p>Prawa zastrzeżone © 2022</p>
                 <p class="flex">made by <img src="assets/img/logo-full-light.svg"/></p>
             </div>
