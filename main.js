@@ -7,14 +7,13 @@ var masonry = new Macy({
   margin: 43,
   breakAt: {
     1600: 4,
-    900: 3,
-    500: 2,
+    1023: 3,
+    767: 2,
   },
 });
 
 function showImages(number) {
   const images = document.querySelectorAll(".tile--hidden");
-  console.log(images);
 
   for (let i = 0; i < number; i++) {
     images[i].classList.remove("tile--hidden");
@@ -48,8 +47,7 @@ function showGallery(index) {
 function nextImg() {
     if(imgIndex+1 > allImages.length) imgIndex = 0;
     imgIndex++;  
-    
-    console.log(imgIndex);
+
     showGallery(imgIndex);
 }
 
@@ -57,7 +55,6 @@ function prevImg() {
     if(imgIndex - 1 < 1) imgIndex = allImages.length+1;
     imgIndex--;
 
-    console.log(imgIndex);
     showGallery(imgIndex);
 }
 
