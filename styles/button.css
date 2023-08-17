@@ -16,27 +16,62 @@
 .button--green {
     background: var(--green);
     color: var(--grey);
+    transition: .3s all;
 }
+
+    .button--green:hover {
+        color: var(--green);
+        background: var(--grey);
+    }
 
 .button--white {
     background: var(--grey);
     color: var(--green);
+    transition: .5s all;
 }
+
+    .button--white:hover {
+        color: var(--grey);
+        background: none;
+        border: 1px solid var(--grey);
+    }
 
 .button--outlined-green {
     border: 1px solid var(--green);
     color: var(--green);
+    transition: .5s all;
 }
+
+    .button--outlined-green:hover {
+        color: var(--green);
+        background: var(--grey);
+        border: none;
+    }
+
 
 .button--outlined-white {
     border: 1px solid var(--grey);
     color: var(--grey);
+    transition: .5s all;
 }
+
+    .button--outlined-white:hover {
+        background: var(--grey);
+        color: var(--green);
+        transition: .5s all;
+    }
 
 .button--outlined-black {
     border: 1px solid var(--black);
     color: var(--black);
+    transition: .5s all;
 }
+
+    .button--outlined-black:hover {
+        border: 1px solid var(--green);
+        color: var(--green);
+        transition: .3s all;
+    }
 
 .button--link {
     background: none;
