@@ -14,8 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
   </head>
   <body>
-    <header class="w-full  bg-white">
-      <nav class="flex justify-between items-center py-6 w-5/6 max-w-[1440px] mx-auto">
+    <header class="w-full bg-white">
+      <nav class="flex justify-between items-center py-6 w-5/6 mx-auto max-w-[1440px]">
         <img src="assets/img/giarddesign.svg" alt="giarddesign logo"/>
         <div class="flex justify-between gap-12">
             <a href="#" class="nav__link flex">Oferta <span class="material-symbols-outlined">expand_more</span></a>
@@ -98,18 +98,44 @@
     </section>
 
     <section class="section bg-beige pt-[120px]">
-        <div class="w-5/6 mx-auto pl-12 max-w-[1440px]">
+
+        <div class="w-5/6 mx-auto pl-12 max-w-[1440px] mb-[52px]">
             <h5 class="section__nav text-green">Realizacje</h5>
             <h1 class="section__header">Nasze <span class="section__header--decorator">projekty</span></h1>
         </div> 
-        <div class="w-full flex flex-col items-center">
-            <div>TO-DO: Mansonry</div>
-            <button class="button button--outlined-black mb-24">Rozwiń <span class="material-symbols-outlined">arrow_downward</span></button>
-       </div>  
+
+        <div class="grid content-center relative my-11">
+            <div id="macy-container">          
+                <div class="tile" onclick="alert(1)"><img src="assets/img/mansonry-9.webp"></div>   
+                <div class="tile" onclick="alert(2)"><img src="assets/img/mansonry-8.webp"></div>
+                <div class="tile" onclick="alert(3)"><img src="assets/img/mansonry-7.webp"></div>
+                <div class="tile" onclick="alert(4)"><img src="assets/img/mansonry-5.webp"></div>
+                <div class="tile" onclick="alert(5)"><img src="assets/img/mansonry-4.webp"></div>
+                <div class="tile" onclick="alert(6)"><img src="assets/img/mansonry-6.webp"></div>
+                <div class="tile" onclick="alert(7)"><img src="assets/img/mansonry-2.webp"></div>
+                <div class="tile" onclick="alert(8)"><img src="assets/img/mansonry-3.webp"></div>
+                <div class="tile" onclick="alert(9)"><img src="assets/img/mansonry-1.webp"></div>
+                <div class="tile--hidden" onclick="alert(1)"><img src="assets/img/mansonry-9.webp"></div>   
+                <div class="tile--hidden" onclick="alert(2)"><img src="assets/img/mansonry-8.webp"></div>
+                <div class="tile--hidden" onclick="alert(3)"><img src="assets/img/mansonry-7.webp"></div>
+                <div class="tile--hidden" onclick="alert(4)"><img src="assets/img/mansonry-5.webp"></div>
+                <div class="tile--hidden" onclick="alert(5)"><img src="assets/img/mansonry-4.webp"></div>
+                <div class="tile--hidden" onclick="alert(6)"><img src="assets/img/mansonry-6.webp"></div>
+                <div class="tile--hidden" onclick="alert(7)"><img src="assets/img/mansonry-2.webp"></div>
+                <div class="tile--hidden" onclick="alert(8)"><img src="assets/img/mansonry-3.webp"></div>
+                <div class="tile--hidden" onclick="alert(9)"><img src="assets/img/mansonry-1.webp"></div>
+            </div>  
+            <div class="gradient" id="view-more">
+                <button onclick="viewMore()" id="more-btn" class="button button--outlined-black mb-11">Rozwiń <span class="material-symbols-outlined">arrow_downward</span></button>
+            </div>
+        </div>
+
     </section>
 
+
+
     <section  class="section my-[60px]" id="contact">
-        <div class="w-5/6 max-w-[1440px] mx-auto bg-green text-grey">
+        <div class="w-5/6 max-w-[1040px] mx-auto bg-green text-grey">
             <div class="flex justify-between px-[110px] py-[120px]">
                 <h1 class="text-[40px] font-heading font-light max-w-[600px] align-bottom">Zostańmy w kontakcie! Znajdziesz nas na <span class="font-sans italic" >Instagramie.</span></h1>
                 <div class="w-1/6 align-bottom">

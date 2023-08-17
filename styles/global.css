@@ -77,3 +77,32 @@ body {
     transform-origin: left;
     transform: scaleX(1);
 }
+
+.gradient {
+    position: absolute;
+    height: 70%;
+    width: 100%; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    bottom: 0;
+    z-index: 999;
+    background: transparent;
+    background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+}
+
+
+.tile--hidden {
+    height: 0;
+    opacity: 5;
+    transition: all .3s ease-out;
+    transform: scaleX(0);
+}
+
+
+.tile--show {
+    opacity: 100;
+    height: fit-content;
+    transform: scaleX(1);
+    transition: all .3s ease-in;
+}

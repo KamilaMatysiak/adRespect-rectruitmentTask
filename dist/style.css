@@ -17,6 +17,7 @@
   align-items: center;
   padding: 12px 24px 14px 24px;
   gap: 10px;
+  max-height: 50px;
   border-radius: 200px;
   font-family: var(--inter);
   font-size: 16px;
@@ -878,8 +879,12 @@ video {
   margin-bottom: 62px;
 }
 
-.mb-24{
-  margin-bottom: 6rem;
+.mb-11{
+  margin-bottom: 2.75rem;
+}
+
+.mb-\[52px\]{
+  margin-bottom: 52px;
 }
 
 .mr-9{
@@ -1039,6 +1044,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.max-w-\[1040px\]{
+  max-width: 1040px;
 }
 
 .max-w-\[1440px\]{
@@ -2731,6 +2740,34 @@ body {
 .nav__link:hover::before {
   transform-origin: left;
   transform: scaleX(1);
+}
+
+.gradient {
+  position: absolute;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  bottom: 0;
+  z-index: 999;
+  background: transparent;
+  background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
+}
+
+.tile--hidden {
+  height: 0;
+  opacity: 5;
+  transition: all .3s ease-out;
+  transform: scaleX(0);
+}
+
+.tile--show {
+  opacity: 100;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: scaleX(1);
+  transition: all .3s ease-in;
 }
 
 @media (min-width: 640px){
