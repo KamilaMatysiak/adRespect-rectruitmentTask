@@ -14,6 +14,14 @@
     <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
   </head>
   <body>
+
+    <div id="popup" class="popup-gallery">
+        <button onclick="closeGallery()" class="popup-gallery__button popup-gallery__button--close"><span class="material-symbols-outlined">close</span></button>
+        <button onclick="prevImg()" class="popup-gallery__button" id="prev"><span class="material-symbols-outlined">arrow_back</span></button>
+        <img class="popup-gallery__img" id="popup-img">
+        <button onclick="nextImg()" class="popup-gallery__button" id="next"><span class="material-symbols-outlined">arrow_forward</span></button>
+    </div>
+
     <header class="w-full bg-white">
       <nav class="flex justify-between items-center py-6 w-5/6 mx-auto max-w-[1440px]">
         <img src="assets/img/giarddesign.svg" alt="giarddesign logo"/>
@@ -97,33 +105,33 @@
     </div>
     </section>
 
-    <section class="section bg-beige pt-[120px]">
 
-        <div class="w-5/6 mx-auto pl-12 max-w-[1440px] mb-[52px]">
+    <section class="section bg-beige pt-[120px]">
+        <div class="w-5/6 mx-auto pl-12 max-w-[1440px] mb-[96px]">
             <h5 class="section__nav text-green">Realizacje</h5>
             <h1 class="section__header">Nasze <span class="section__header--decorator">projekty</span></h1>
         </div> 
 
-        <div class="grid content-center relative my-11">
+        <div class="grid content-center relative mb-11">
             <div id="macy-container">          
-                <div class="tile" onclick="alert(1)"><img src="assets/img/mansonry-9.webp"></div>   
-                <div class="tile" onclick="alert(2)"><img src="assets/img/mansonry-8.webp"></div>
-                <div class="tile" onclick="alert(3)"><img src="assets/img/mansonry-7.webp"></div>
-                <div class="tile" onclick="alert(4)"><img src="assets/img/mansonry-5.webp"></div>
-                <div class="tile" onclick="alert(5)"><img src="assets/img/mansonry-4.webp"></div>
-                <div class="tile" onclick="alert(6)"><img src="assets/img/mansonry-6.webp"></div>
-                <div class="tile" onclick="alert(7)"><img src="assets/img/mansonry-2.webp"></div>
-                <div class="tile" onclick="alert(8)"><img src="assets/img/mansonry-3.webp"></div>
-                <div class="tile" onclick="alert(9)"><img src="assets/img/mansonry-1.webp"></div>
-                <div class="tile--hidden" onclick="alert(1)"><img src="assets/img/mansonry-9.webp"></div>   
-                <div class="tile--hidden" onclick="alert(2)"><img src="assets/img/mansonry-8.webp"></div>
-                <div class="tile--hidden" onclick="alert(3)"><img src="assets/img/mansonry-7.webp"></div>
-                <div class="tile--hidden" onclick="alert(4)"><img src="assets/img/mansonry-5.webp"></div>
-                <div class="tile--hidden" onclick="alert(5)"><img src="assets/img/mansonry-4.webp"></div>
-                <div class="tile--hidden" onclick="alert(6)"><img src="assets/img/mansonry-6.webp"></div>
-                <div class="tile--hidden" onclick="alert(7)"><img src="assets/img/mansonry-2.webp"></div>
-                <div class="tile--hidden" onclick="alert(8)"><img src="assets/img/mansonry-3.webp"></div>
-                <div class="tile--hidden" onclick="alert(9)"><img src="assets/img/mansonry-1.webp"></div>
+                <button class="tile"            onclick="openImg(1)">   <img class="gallery-img" src="assets/img/mansonry-9.webp"></button>   
+                <button class="tile"            onclick="openImg(2)">   <img class="gallery-img" src="assets/img/mansonry-8.webp"></button>
+                <button class="tile"            onclick="openImg(3)">   <img class="gallery-img" src="assets/img/mansonry-7.webp"></button>
+                <button class="tile"            onclick="openImg(4)">   <img class="gallery-img" src="assets/img/mansonry-5.webp"></button>
+                <button class="tile"            onclick="openImg(5)">   <img class="gallery-img" src="assets/img/mansonry-4.webp"></button>
+                <button class="tile"            onclick="openImg(6)">   <img class="gallery-img" src="assets/img/mansonry-6.webp"></button>
+                <button class="tile"            onclick="openImg(7)">   <img class="gallery-img" src="assets/img/mansonry-2.webp"></button>
+                <button class="tile"            onclick="openImg(8)">   <img class="gallery-img" src="assets/img/mansonry-3.webp"></button>
+                <button class="tile"            onclick="openImg(9)">   <img class="gallery-img" src="assets/img/mansonry-1.webp"></button>
+                <button class="tile--hidden"    onclick="openImg(10)">  <img class="gallery-img" src="assets/img/mansonry-9.webp"></button>   
+                <button class="tile--hidden"    onclick="openImg(11)">  <img class="gallery-img" src="assets/img/mansonry-8.webp"></button>
+                <button class="tile--hidden"    onclick="openImg(12)">  <img class="gallery-img" src="assets/img/mansonry-7.webp"></button>
+                <button class="tile--hidden"    onclick="openImg(13)">  <img class="gallery-img" src="assets/img/mansonry-5.webp"></button>
+                <button class="tile--hidden"    onclick="openImg(14)">  <img class="gallery-img" src="assets/img/mansonry-4.webp"></button>
+                <button class="tile--hidden"    onclick="openImg(15)">  <img class="gallery-img" src="assets/img/mansonry-6.webp"></button>
+                <button class="tile--hidden"    onclick="openImg(16)">  <img class="gallery-img" src="assets/img/mansonry-2.webp"></button>
+                <button class="tile--hidden"    onclick="openImg(17)">  <img class="gallery-img" src="assets/img/mansonry-3.webp"></button>
+                <button class="tile--hidden"    onclick="openImg(18)">  <img class="gallery-img" src="assets/img/mansonry-1.webp"></button>
             </div>  
             <div class="gradient" id="view-more">
                 <button onclick="viewMore()" id="more-btn" class="button button--outlined-black mb-11">Rozwiń <span class="material-symbols-outlined">arrow_downward</span></button>
