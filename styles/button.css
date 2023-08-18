@@ -81,3 +81,8 @@
     border-bottom: 1px solid var(--green);
     color: var(--green);
 }
+
+.button--link:hover span {
+    transform: translateX(8px);
+    transition: 1s all;
+}
