@@ -1,3 +1,5 @@
+// MASONRY //
+
 var masonry = new Macy({
   container: "#macy-container",
   mobileFirst: true,
@@ -61,4 +63,22 @@ function prevImg() {
 function closeGallery() {
     const gallery = document.querySelector("#popup");
     gallery.style.display = "none";
+}
+
+// NAVIGATION //
+
+function toggleMenu() {
+    const menuIcon = document.querySelector(".hamburger__icon");
+    const closeIcon = document.querySelector(".hamburger__icon--close");
+    const menu = document.querySelector(".nav__menu");
+
+    if(event.target == closeIcon) {
+      menuIcon.style.display = "block";
+      closeIcon.style.display = "none";
+      menu.style.display = "none";
+    } else {
+      menuIcon.style.display = "none";
+      closeIcon.style.display = "block";
+      menu.style.display = "flex";
+    }
 }

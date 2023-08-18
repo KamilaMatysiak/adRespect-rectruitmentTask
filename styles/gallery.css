@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: flex-end;
     bottom: 0;
-    z-index: 998;
+    z-index: 49;
     background: transparent;
     background: linear-gradient(360deg, #DCC1AB 0%, rgba(214, 183, 158, 0.00) 100%);
 }

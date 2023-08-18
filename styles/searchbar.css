@@ -52,3 +52,25 @@
     cursor: auto;
     transition: all 1s cubic-bezier(.41,.3,.61,.8);
 }
+
+@media (max-width: 1023px) { 
+    .search-bar__button:focus ~ .search-bar__input,
+    .search-bar__input:focus {
+        width: 75vw;
+    }
+
+    .search-bar__button {
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+    }
+
+    .search-bar__input {
+        height: 18px;
+        font-size: 16px;
+    }
+    
+    .search-bar__input::placeholder {
+        font-size: 16px;
+    }
+}

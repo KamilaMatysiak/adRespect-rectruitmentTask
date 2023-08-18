@@ -33,3 +33,13 @@
     line-height: 150%; /* 21px */
     letter-spacing: -0.14px;
 }
+
+@media (max-width: 1023px) {
+    .card {
+        width: 100%;
+    }
+
+    .card__text {
+        max-width: 380px;
+    }
+}
