@@ -82,3 +82,37 @@ function toggleMenu() {
       menu.style.display = "flex";
     }
 }
+
+// SLIDER //
+const sliderImg = document.getElementsByClassName("slider__img");
+var sliderIndex = 0;
+var slideInterval = setInterval(nextSlide,5000);
+
+function prevSlide() {
+  if(sliderIndex-1 < 0) sliderIndex = sliderImg.length-1;
+  else sliderIndex--;
+  clearInterval(slideInterval);
+  showSlides(sliderIndex);
+}
+
+function nextSlide() {
+  if(sliderIndex < sliderImg.length - 1) sliderIndex++;
+  else sliderIndex=0;
+  clearInterval(slideInterval);
+  showSlides(sliderIndex);
+}
+
+
+function showSlides(index) {
+  for(var i=0; i<sliderImg.length; i++) {
+    sliderImg[i].style.display = "none"
+  }
+
+  console.log(index)
+
+  sliderImg[index].style.display = "block"
+
+  slideInterval = setInterval(nextSlide,5000);
+}
+
+showSlides(0);

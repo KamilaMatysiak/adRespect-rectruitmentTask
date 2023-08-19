@@ -55,7 +55,7 @@
 
     <section class="section relative h-[737px] flex bg-beige md:flex-col items-center md:justify-center md:h-fit">
         <div class="w-5/6 bg-beige m-auto max-w-[1440px] md:my-20 xl:z-20 xl:h-full xl:w-fit xl:mx-8 xl:flex xl:items-center">
-            <div class="max-w-[600px] lg:mt-20 lg:max-w-lg lg:ml-8 lg:mr-4 align-middle">
+            <div class="max-w-[600px] lg:mt-20 lg:max-w-lg lg:mx-8 align-middle xl:mr-8">
                 <div class="max-w-[500px] lg:max-w-md">
                     <h1 class="text-6xl font-medium font-heading lg:text-5xl">Nowoczesna aranżacja Twojego ogrodu </h1>
                     <p class="text-base my-11 md:text-sm">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
@@ -68,14 +68,22 @@
         </div>
                     
         <div class="absolute right-0 md:w-full md:static xl:z-0">
-            <img src="assets/img/banner.webp"/>
+            <div class="slider">
+                <img class="slider__img" src="assets/img/banner.webp"/>
+                <img class="slider__img" src="assets/img/about.webp"/>
+                <img class="slider__img" src="assets/img/mansonry-5.webp"/>
+                <div class="slider__buttons">
+                    <button class="slider__btn" onclick="prevSlide()"><span class="material-symbols-outlined">arrow_back</span></button>
+                    <button class="slider__btn" onclick="nextSlide()"><span class="material-symbols-outlined">arrow_forward</span></button>
+                </div>
+            </div>
         </div>
         
 
     </section>
 
     <section class="section my-[120px]">
-        <div class="w-4/6 max-w-[1440px] mx-auto md:w-full">
+        <div class="w-4/6 max-w-[1440px] mx-auto">
             <div class="max-w-[709px]">
                 <h5 class="section__nav text-green">Oferta</h5>
                 <h1 class="section__header">Działamy <span class="section__header--decorator">kompleksowo</span></h1>
