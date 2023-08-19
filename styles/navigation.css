@@ -9,6 +9,7 @@
 .nav__link {
     position: relative;
     text-decoration: none;
+    padding: 8px 16px;
 }
 
 .nav__link::before {
@@ -30,6 +31,10 @@
     transform: scaleX(1);
 }
 
+.nav__icon {
+    transition: all .5s ease-in-out;
+}
+
 .dropdown:hover .nav__icon,
 .dropdown-menu:hover .nav__icon {
     transition: all .5s ease-in-out;
@@ -46,7 +51,6 @@
     position: absolute;
     background: var(--white);
     min-width: 160px;
-    margin-top: 8px;
     font-size: 16px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
@@ -63,7 +67,6 @@
     background: rgba(0,0,0,0.1);
     transition: .3s all;
 }
-
 
 .dropdown:hover .dropdown-menu {
     display: block;

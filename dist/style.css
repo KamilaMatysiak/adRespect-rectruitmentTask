@@ -350,6 +350,7 @@
 .nav__link {
   position: relative;
   text-decoration: none;
+  padding: 8px 16px;
 }
 
 .nav__link::before {
@@ -371,6 +372,10 @@
   transform: scaleX(1);
 }
 
+.nav__icon {
+  transition: all .5s ease-in-out;
+}
+
 .dropdown:hover .nav__icon,
 .dropdown-menu:hover .nav__icon {
   transition: all .5s ease-in-out;
@@ -387,7 +392,6 @@
   position: absolute;
   background: var(--white);
   min-width: 160px;
-  margin-top: 8px;
   font-size: 16px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -2451,9 +2455,9 @@ video {
   padding-bottom: 5rem;
 }
 
-.py-6{
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.py-4{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 .py-8{
@@ -2554,6 +2558,11 @@ video {
 .text-base{
   font-size: 1rem;
   line-height: 1.5rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .font-bold{
@@ -3019,6 +3028,20 @@ body {
   letter-spacing: -0.16px;
 }
 
+.footer__link {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  /* 21px */
+  letter-spacing: -0.14px;
+  transition: .3s all;
+}
+
+.footer__link:hover {
+  color: var(--green);
+}
+
 @media (max-width: 767px) {
   .section .section__header {
     font-size: 32px;
@@ -3217,6 +3240,11 @@ body {
     padding-right: 55px;
   }
 
+  .lg\:py-6{
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .lg\:text-3xl{
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -3269,10 +3297,6 @@ body {
 
   .md\:items-start{
     align-items: flex-start;
-  }
-
-  .md\:justify-start{
-    justify-content: flex-start;
   }
 
   .md\:justify-center{

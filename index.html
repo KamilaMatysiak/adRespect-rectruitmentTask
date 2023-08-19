@@ -23,7 +23,7 @@
     </div>
 
     <header class="w-full bg-white md:fixed z-50">
-      <nav class="flex justify-between items-center py-6 w-5/6 mx-auto max-w-[1440px] lg:w-full lg:px-8 lg:relative ">
+      <nav class="flex justify-between items-center py-4 w-5/6 mx-auto max-w-[1440px] lg:w-full lg:px-8 lg:relative lg:py-6">
         <img src="assets/img/giarddesign.svg" alt="giarddesign logo"/>
         <div class="relative hidden lg:block lg:static">
             <button onclick="toggleMenu()" class="hamburger">
@@ -33,7 +33,7 @@
         </div>
         <div class="nav__menu">
             <div class="dropdown">
-                <div class="nav__link flex">Oferta <span class="material-symbols-outlined nav__icon">expand_more</span></div>
+                <button class="nav__link flex">Oferta <span class="material-symbols-outlined nav__icon">expand_more</span></button>
                 <div class="dropdown-menu">
                     <a class="dropdown-menu__option" href="#" >Cennik</a>
                     <a class="dropdown-menu__option" href="#" >Projekty</a>
@@ -178,19 +178,19 @@
 
             <div class="flex justify-between sm:flex-wrap">
                 <div class="flex gap-12 lg:flex-col">
-                    <a>Kontakt</a>
-                    <a>Instagram</a>
-                    <a>Facebook</a>
-                    <a>LinkedIn</a>
+                    <a class="footer__link" href="#">Kontakt</a>
+                    <a class="footer__link" href="#">Instagram</a>
+                    <a class="footer__link" href="#">Facebook</a>
+                    <a class="footer__link" href="#">LinkedIn</a>
                 </div>
 
-                <div class="flex gap-12 md:flex-col lg:gap-6">
+                <div class="text-sm flex gap-12 md:flex-col lg:gap-6">
                     <p>000-000-000</p>
                     <p>giarddesign@kontakt.pl</p>
                 </div>
             </div>
 
-            <div class="flex justify-between mt-[120px] md:flex-wrap">
+            <div class="text-base flex justify-between mt-[120px] md:flex-wrap">
                 <p>Prawa zastrzeżone © 2022</p>
                 <p class="flex">made by <img src="assets/img/logo-full-light.svg"/></p>
             </div>
