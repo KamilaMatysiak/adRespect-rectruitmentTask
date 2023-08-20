@@ -104,15 +104,6 @@
     position: relative;
 }
 
-    .slider .slider__img {
-        position: absolute;
-        left: 0;
-        top:0;
-        height: 100%;
-        width: fit-content;
-        transition: 2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    }
-
 .slider .slider__buttons {
     display: flex;
     justify-content: center;

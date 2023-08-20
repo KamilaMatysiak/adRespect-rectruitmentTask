@@ -115,7 +115,7 @@ function showSlides(index) {
   slides[index].style.zIndex = '999';
 
 
-  slideInterval = setInterval(nextSlide,10000);
+  slideInterval = setInterval(nextSlide,20000);
 }
 
 showSlides(0);
