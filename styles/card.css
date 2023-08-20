@@ -85,7 +85,7 @@
 
 @media (max-width: 1023px) {
     .card__content {
-        max-width: 98%;
+        max-width: 100%;
     }
 
     .card__text {

@@ -121,7 +121,7 @@
                 <p class="section__text my-8">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
             </div>
         </div>
-        <div class="flex mx-auto justify-between w-5/6 max-w-[1440px] lg:flex-col lg:w-4/6">
+        <div class="flex mx-auto justify-between w-5/6 max-w-[1440px] lg:flex-col">
             <div class="card">
                 <a href="#" class="card__content">
                     <img class="card__icon" src="assets/icons/offer-pencil.svg" alt="Projekty"/>
@@ -158,8 +158,9 @@
     </section>
 
     <section id="about" class="section bg-green text-grey relative flex items-center h-[720px] lg:h-[1000px] lg:items-end">
-        <div class="w-3/6 max-w-[1440px] gap-2 lg:w-full ml-[720px] py-8 lg:ml-0 lg:bg-green lg:z-10">
-            <div class="ml-[128px] max-w-[500px] lg:ml-16 xl:ml-4">
+        <div class="w-5/6 mx-auto py-4 flex items-center max-w-[1440px] gap-2 lg:w-full lg:ml-0 lg:bg-green lg:z-10 lg:h-[500px]">
+            <div class="min-w-[650px] min-h-[720px] lg:hidden"></div>
+            <div class="max-w-[500px] lg:ml-16 xl:mr-8 lg:my-8">
                 <h5 class="section__nav">O firmie</h5>
                 <h1 class="section__header max-w-[250px] lg:max-w-[500px]">Tworzymy z <span class="section__header--decorator">pasją</span></h1>
                 <p class="section__text my-10">Każdy projekt to nowe wyzwanie. Dlatego nasz zespół tworzą wykwalifikowani projektanci oraz architekci, których zadaniem jest rozpoznanie i realizacja potrzeb każdego Klienta. Nasza specjalizacja to przestrzenie nowoczesne, które charakteryzuje minimalizm, geometria i elegancka prostota. Tworzymy ogrody małoobsługowe, dostosowane do współczesnego trybu życia.</p>
@@ -167,7 +168,7 @@
             </div>
         </div>
 
-        <img class="absolute top-0 left-0 w--[688px] h-[720px] lg:z-0 lg:w-full sm:h-auto" src="assets/img/about.webp"/>
+        <div class="absolute top-0 left-0 w-[688px] h-[720px] lg:w-full lg:aspect-square bg-black bg-no-repeat bg-cover bg-center" style="background-image: url('assets/img/about.webp')"></div>
     </section>
 
 
@@ -219,7 +220,7 @@
 
     <footer class="bg-black text-grey">
         <div class="w-5/6 mx-auto py-20">
-            <div class="flex justify-between items-center sm:flex-wrap">
+            <div class="flex justify-between items-center sm:flex-wrap md:gap-8">
                 <img src="assets/img/giarddesign-light.svg"/>
                 <div class="flex items-center gap-6 md:flex-col md:items-start">
                     <p class="text-base">Daj znać, co możemy dla Ciebie zrobić!</p>
@@ -230,7 +231,7 @@
             <hr class="w-full my-[62px]"/>
 
             <div class="flex justify-between sm:flex-wrap">
-                <div class="flex gap-12 lg:flex-col">
+                <div class="flex gap-12 lg:flex-col md:gap-6">
                     <a class="footer__link" href="#">Kontakt</a>
                     <a class="footer__link" href="#">Instagram</a>
                     <a class="footer__link" href="#">Facebook</a>

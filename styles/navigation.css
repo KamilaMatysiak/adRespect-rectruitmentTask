@@ -52,8 +52,8 @@
     position: absolute;
     top: -350px;
     left: 0;
-    background: var(--green);
-    color: var(--white);
+    background: var(--white);
+    color: var(--black);
     min-width: 180px;
     font-size: 16px;
     z-index: 1;
@@ -67,7 +67,7 @@
 }
 
 .dropdown-menu__option:hover {
-    background: rgba(255,255,255, .1);
+    background: var(--grey);
     transition: .3s all;
 }
 
