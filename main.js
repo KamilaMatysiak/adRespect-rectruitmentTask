@@ -113,3 +113,25 @@ function showSlides(index) {
 }
 
 showSlides(0);
+
+// LIGHT CURSOR //
+
+const allCards = document.querySelectorAll(".card");
+
+window.addEventListener("mousemove", (ev) => {
+  allCards.forEach((e) => {
+    const light = e.querySelector(".card__light");
+    const fakelight = e.querySelector(".card__fakelight");
+
+    const rec = fakelight.getBoundingClientRect();
+
+  light.animate(
+    [{
+      transform: `translate(${ev.clientX - rec.left - (rec.width / 2)}px,${ev.clientY - rec.top - (rec.height / 2)}px)`,
+    }],
+    {
+      duration: 300,
+      fill: "forwards",
+    }
+  )});
+})

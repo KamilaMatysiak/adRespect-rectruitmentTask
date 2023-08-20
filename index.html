@@ -56,13 +56,13 @@
     </header>
 
     <section class="section relative h-[737px] flex bg-beige md:flex-col items-center md:justify-center md:h-fit">
-        <div class="w-5/6 bg-beige m-auto max-w-[1440px] md:my-20 xl:z-20 xl:h-full xl:w-fit xl:mx-8 xl:flex xl:items-center fade">
+        <div class="w-5/6 bg-beige m-auto max-w-[1440px] md:my-20 xl:z-20 xl:h-full xl:w-fit xl:mx-8 xl:flex xl:items-center">
             <div class="max-w-[600px] lg:mt-20 lg:max-w-lg lg:mx-8 align-middle xl:mr-8">
-                <div class="max-w-[500px] lg:max-w-md">
+                <div class="max-w-[500px] lg:max-w-md fade">
                     <h1 class="text-6xl font-medium font-heading lg:text-5xl">Nowoczesna aranżacja Twojego ogrodu </h1>
                     <p class="text-base my-11 md:text-sm">Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka realizacji. Oferujemy kompleksowy zakres usług z indywidualnym podejściem do każdego projektu.</p>
                 </div>
-                <div class="flex mt-7 lg:flex-wrap lg:gap-2">
+                <div class="flex mt-7 lg:flex-wrap lg:gap-2 fade">
                     <button class="button button--green mr-9">Skontaktuj się z nami</button>
                     <button class="button button--outlined-green">Zobacz nasze realizacje <span class="material-symbols-outlined">arrow_downward</span></button>
                 </div>
@@ -92,32 +92,44 @@
                 <p class="section__text my-8">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
             </div>
         </div>
-        <div class="flex justify-around mx-auto mt-16 w-5/6 max-w-[1440px] gap-16 lg:flex-col lg:w-4/6">
-            <a href="#" class="cardy">
-                <img class="cardy__icon" src="assets/icons/offer-pencil.svg" alt="Projekty"/>
-                <h2 class="cardy__header">Projekty</h2>
-                <p class="cardy__text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
-                <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
-            </a>
-            <a href="#" class="cardy">
-                <img class="cardy__icon" src="assets/icons/offer-eye.svg" alt="Wizualizacje"/>
-                <h2 class="cardy__header">Wizualizacje</h2>
-                <p class="cardy__text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
-                <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
-            </a>
-            <a href="#" class="card">
-                <div class="card__content">
+        <div class="flex mx-auto justify-between w-5/6 max-w-[1440px] lg:flex-col lg:w-4/6">
+            <div class="card">
+                <a href="#" class="card__content">
+                    <img class="card__icon" src="assets/icons/offer-pencil.svg" alt="Projekty"/>
+                    <h2 class="card__header">Projekty</h2>
+                    <p class="card__text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                    <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
+                </a>
+                <div class="card__light"></div>
+                <div class="card__fakelight"></div>
+
+            </div>
+            <div class="card">
+                <a href="#" class="card__content">
+                    <img class="card__icon" src="assets/icons/offer-eye.svg" alt="Wizualizacje"/>
+                    <h2 class="card__header">Wizualizacje</h2>
+                    <p class="card__text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
+                    <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
+                </a>
+                <div class="card__light"></div>
+                <div class="card__fakelight"></div>
+             </div>
+
+            <div class="card">
+                <a href="#" class="card__content">
                     <img class="card__icon" src="assets/icons/offer-stars.svg" alt="Realizacje"/>
                     <h2 class="card__header">Realizacje</h2>
                     <p class="card__text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
                     <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
-                </div>
-            </a>
+                </a>
+                <div class="card__light"/>
+                <div class="card__fakelight"/>
+            </div>
         </div>
     </section>
 
     <section id="about" class="section bg-green text-grey relative flex items-center h-[720px] lg:h-[1000px] lg:items-end">
-        <div class="w-3/6 max-w-[1440px] lg:w-full ml-[720px] py-8 lg:ml-0 lg:bg-green lg:z-10">
+        <div class="w-3/6 max-w-[1440px] gap-2 lg:w-full ml-[720px] py-8 lg:ml-0 lg:bg-green lg:z-10">
             <div class="ml-[128px] max-w-[500px] lg:ml-16 xl:ml-4">
                 <h5 class="section__nav">O firmie</h5>
                 <h1 class="section__header max-w-[250px] lg:max-w-[500px]">Tworzymy z <span class="section__header--decorator">pasją</span></h1>
