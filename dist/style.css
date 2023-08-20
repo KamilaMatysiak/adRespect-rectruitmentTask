@@ -448,7 +448,7 @@
   position: absolute;
   bottom: 0;
   right: 0;
-  background: var(--white);
+  background: var(--grey);
   z-index: 999;
 }
 
@@ -461,7 +461,7 @@
 }
 
 .slider .slider__btn:hover {
-  background: rgba(0,0,0,.25);
+  background: rgba(0,0,0,.12);
   color: var(--green);
   transition: .3s all;
 }
