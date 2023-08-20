@@ -3,7 +3,8 @@
     transition: transform 0.2s;
     display: flex;
     justify-content: space-between;
-    gap: 48px;
+    z-index: 999;
+    gap: 16px;
 }
 
 .nav__link {
@@ -47,12 +48,14 @@
 }
 
 .dropdown-menu {
-    display: none;
+    opacity: 0;
     position: absolute;
-    background: var(--white);
-    min-width: 160px;
+    top: -350px;
+    left: 0;
+    background: var(--green);
+    color: var(--white);
+    min-width: 180px;
     font-size: 16px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
@@ -64,12 +67,14 @@
 }
 
 .dropdown-menu__option:hover {
-    background: rgba(0,0,0,0.1);
+    background: rgba(255,255,255, .1);
     transition: .3s all;
 }
 
 .dropdown:hover .dropdown-menu {
-    display: block;
+    opacity: 1;
+    top: 40px;
+    transition: .3s all;
 }
 
 /* HAMBURGER MENU */
@@ -102,14 +107,18 @@
         flex-direction: column;
         justify-content: flex-start;
         background: var(--white);
-        z-index: 999;
         padding: 2vh 8vw;
     }
 
     .dropdown-menu {
+        display: none;
         position: static;
         box-shadow: none;
         border-left: 1px solid rgba(0,0,0,.12);
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
     }
 
     .nav__link {

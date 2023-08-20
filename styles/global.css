@@ -15,6 +15,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--inter);
     background: var(--grey);
@@ -72,6 +76,16 @@ body {
 .footer__link:hover {
     color: var(--green);
 }
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 @media (max-width: 767px) {
     .section .section__header {

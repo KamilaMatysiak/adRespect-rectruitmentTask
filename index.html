@@ -35,14 +35,16 @@
             <div class="dropdown">
                 <button class="nav__link flex">Oferta <span class="material-symbols-outlined nav__icon">expand_more</span></button>
                 <div class="dropdown-menu">
-                    <a class="dropdown-menu__option" href="#" >Cennik</a>
-                    <a class="dropdown-menu__option" href="#" >Projekty</a>
-                    <a class="dropdown-menu__option" href="#" >Realizacje</a>
+                    <a class="dropdown-menu__option" href="#" >Aranżacje balkonów i tarasów</a>
+                    <a class="dropdown-menu__option" href="#" >Aranżacje ogrodów i patio</a>
+                    <a class="dropdown-menu__option" href="#" >Modernizacja ogrodu</a>
+                    <a class="dropdown-menu__option" href="#" >Usługi ogrodnicze</a>
+                    
                 </div>
             </div>
-            <a href="#" class="nav__link">O firmie</a>
-            <a href="#" class="nav__link">Realizacje</a>
-            <a href="#" class="nav__link">Kontakt</a>
+            <a href="#about" class="nav__link">O firmie</a>
+            <a href="#projects" class="nav__link">Realizacje</a>
+            <a href="#contact" class="nav__link">Kontakt</a>
             <div class="nav__link pr-3">
                 <div class="search-bar lg:my-4">
                     <button class="search-bar__button"><span class="material-symbols-outlined">search</span></button>
@@ -54,7 +56,7 @@
     </header>
 
     <section class="section relative h-[737px] flex bg-beige md:flex-col items-center md:justify-center md:h-fit">
-        <div class="w-5/6 bg-beige m-auto max-w-[1440px] md:my-20 xl:z-20 xl:h-full xl:w-fit xl:mx-8 xl:flex xl:items-center">
+        <div class="w-5/6 bg-beige m-auto max-w-[1440px] md:my-20 xl:z-20 xl:h-full xl:w-fit xl:mx-8 xl:flex xl:items-center fade">
             <div class="max-w-[600px] lg:mt-20 lg:max-w-lg lg:mx-8 align-middle xl:mr-8">
                 <div class="max-w-[500px] lg:max-w-md">
                     <h1 class="text-6xl font-medium font-heading lg:text-5xl">Nowoczesna aranżacja Twojego ogrodu </h1>
@@ -82,7 +84,7 @@
 
     </section>
 
-    <section class="section my-[120px]">
+    <section id="offer" class="section my-[120px]">
         <div class="w-4/6 max-w-[1440px] mx-auto">
             <div class="max-w-[709px]">
                 <h5 class="section__nav text-green">Oferta</h5>
@@ -91,28 +93,30 @@
             </div>
         </div>
         <div class="flex justify-around mx-auto mt-16 w-5/6 max-w-[1440px] gap-16 lg:flex-col lg:w-4/6">
-            <a href="#" class="card">
-                <img class="card__icon" src="assets/icons/offer-pencil.svg" alt="Projekty"/>
-                <h2 class="card__header">Projekty</h2>
-                <p class="card__text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+            <a href="#" class="cardy">
+                <img class="cardy__icon" src="assets/icons/offer-pencil.svg" alt="Projekty"/>
+                <h2 class="cardy__header">Projekty</h2>
+                <p class="cardy__text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
+                <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
+            </a>
+            <a href="#" class="cardy">
+                <img class="cardy__icon" src="assets/icons/offer-eye.svg" alt="Wizualizacje"/>
+                <h2 class="cardy__header">Wizualizacje</h2>
+                <p class="cardy__text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
                 <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
             </a>
             <a href="#" class="card">
-                <img class="card__icon" src="assets/icons/offer-eye.svg" alt="Wizualizacje"/>
-                <h2 class="card__header">Wizualizacje</h2>
-                <p class="card__text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
-                <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
-            </a>
-            <a href="#" class="card">
-                <img class="card__icon" src="assets/icons/offer-stars.svg" alt="Realizacje"/>
-                <h2 class="card__header">Realizacje</h2>
-                <p class="card__text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
-                <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
+                <div class="card__content">
+                    <img class="card__icon" src="assets/icons/offer-stars.svg" alt="Realizacje"/>
+                    <h2 class="card__header">Realizacje</h2>
+                    <p class="card__text">Zrealizujemy Twoje marzenie przy użyciu najnowszych rozwiązań i zaawansowanych technologii.</p>
+                    <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
+                </div>
             </a>
         </div>
     </section>
 
-    <section class="section bg-green text-grey relative flex items-center h-[720px] lg:h-[1000px] lg:items-end">
+    <section id="about" class="section bg-green text-grey relative flex items-center h-[720px] lg:h-[1000px] lg:items-end">
         <div class="w-3/6 max-w-[1440px] lg:w-full ml-[720px] py-8 lg:ml-0 lg:bg-green lg:z-10">
             <div class="ml-[128px] max-w-[500px] lg:ml-16 xl:ml-4">
                 <h5 class="section__nav">O firmie</h5>
@@ -126,7 +130,7 @@
     </section>
 
 
-    <section class="section bg-beige pt-[120px]">
+    <section id="projects" class="section bg-beige pt-[120px]">
         <div class="w-5/6 mx-auto pl-12 max-w-[1440px] mb-[96px] md:w-full">
             <h5 class="section__nav text-green">Realizacje</h5>
             <h1 class="section__header">Nasze <span class="section__header--decorator">projekty</span></h1>
@@ -160,7 +164,7 @@
 
     </section>
 
-    <section  class="section my-[60px]" id="contact">
+    <section id="contact"  class="section my-[60px]" id="contact">
         <div class="w-5/6 max-w-[1040px] mx-auto bg-green text-grey">
             <div class="flex justify-between px-[110px] py-[120px] lg:flex-col lg:px-[55px] lg:p-[60px]">
                 <h1 class="text-[40px] lg:text-3xl font-heading font-light max-w-[600px] align-bottom">Zostańmy w kontakcie!<span class="block"></span> Znajdziesz nas na <span class="font-sans italic" >Instagramie.</span></h1>
