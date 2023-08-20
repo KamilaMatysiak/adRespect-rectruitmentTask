@@ -91,28 +91,25 @@ var slideInterval = setInterval(nextSlide,5000);
 function prevSlide() {
   if(sliderIndex-1 < 0) sliderIndex = sliderImg.length-1;
   else sliderIndex--;
-  clearInterval(slideInterval);
   showSlides(sliderIndex);
 }
 
 function nextSlide() {
   if(sliderIndex < sliderImg.length - 1) sliderIndex++;
   else sliderIndex=0;
-  clearInterval(slideInterval);
   showSlides(sliderIndex);
 }
 
 
 function showSlides(index) {
+  clearInterval(slideInterval);
   for(var i=0; i<sliderImg.length; i++) {
-    sliderImg[i].style.display = "none"
+    sliderImg[i].style.left = '100%'
   }
 
-  console.log(index)
+  sliderImg[index].style.left = "0";
 
-  sliderImg[index].style.display = "block"
-
-  slideInterval = setInterval(nextSlide,5000);
+  slideInterval = setInterval(nextSlide,10000);
 }
 
 showSlides(0);
