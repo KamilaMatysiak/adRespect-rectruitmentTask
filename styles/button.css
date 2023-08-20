@@ -11,6 +11,12 @@
     font-weight: 400;
     line-height: 150%;
     text-align: center;
+    transition: .3s all;
+}
+
+.button:active {
+    transform: scale(0.95);
+    transition: .1s ease-in-out;
 }
 
 .button--green {
@@ -45,7 +51,7 @@
     .button--outlined-green:hover {
         color: var(--green);
         background: var(--grey);
-        border: none;
+        border: 1px solid var(--white);
     }
 
 
@@ -69,7 +75,8 @@
 
     .button--outlined-black:hover {
         border: 1px solid var(--green);
-        color: var(--green);
+        background: var(--green);
+        color: var(--white);
         transition: .3s all;
     }
 
@@ -86,3 +93,35 @@
     transform: translateX(8px);
     transition: 1s all;
 }
+
+.button--arrow-down:hover span {
+    animation: downInfinite 1.5s infinite;
+}
+
+.button--arrow-right:hover span {
+    animation: rightInfinite 1.5s infinite;
+}
+
+@keyframes downInfinite {
+    0% {
+      margin-top: 0;
+    }
+    50% {
+      margin-top: 8px;
+    }
+    100% {
+      margin-top: 0;
+    }
+  }
+
+  @keyframes rightInfinite {
+    0% {
+      padding-left: 0px;
+    }
+    50% {
+      padding-left: 8px;
+    }
+    100% {
+      padding-left: 0px;
+    }
+  }
