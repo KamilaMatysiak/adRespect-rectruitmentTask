@@ -3355,9 +3355,17 @@ body {
     margin-bottom: 5rem;
   }
 
+  .md\:aspect-square{
+    aspect-ratio: 1 / 1;
+  }
+
   .md\:h-fit{
     height: -moz-fit-content;
     height: fit-content;
+  }
+
+  .md\:h-auto{
+    height: auto;
   }
 
   .md\:w-full{
