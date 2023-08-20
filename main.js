@@ -84,18 +84,19 @@ function toggleMenu() {
 }
 
 // SLIDER //
-const sliderImg = document.getElementsByClassName("slider__img");
+const slides = document.querySelectorAll(".slide");
 var sliderIndex = 0;
 var slideInterval = setInterval(nextSlide,5000);
 
+
 function prevSlide() {
-  if(sliderIndex-1 < 0) sliderIndex = sliderImg.length-1;
+  if(sliderIndex-1 < 0) sliderIndex = slides.length-1;
   else sliderIndex--;
   showSlides(sliderIndex);
 }
 
 function nextSlide() {
-  if(sliderIndex < sliderImg.length - 1) sliderIndex++;
+  if(sliderIndex < slides.length - 1) sliderIndex++;
   else sliderIndex=0;
   showSlides(sliderIndex);
 }
@@ -103,11 +104,16 @@ function nextSlide() {
 
 function showSlides(index) {
   clearInterval(slideInterval);
-  for(var i=0; i<sliderImg.length; i++) {
-    sliderImg[i].style.left = '100%'
+
+  for(let i=0; i< slides.length; i++) {
+    if(i>index) slides[i].style.left = "100%";
+    if(i<index) slides[i].style.left = "-100%";
+    slides[i].style.zIndex="-1";
   }
 
-  sliderImg[index].style.left = "0";
+  slides[index].style.left = '0';
+  slides[index].style.zIndex = '999';
+
 
   slideInterval = setInterval(nextSlide,10000);
 }
