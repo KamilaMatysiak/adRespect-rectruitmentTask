@@ -102,11 +102,6 @@
   color: var(--green);
 }
 
-.button--link:hover span {
-  transform: translateX(8px);
-  transition: 1s all;
-}
-
 .button--arrow-down:hover span {
   animation: downInfinite 1.5s infinite;
 }
@@ -191,7 +186,7 @@
   width: 380px;
   height: 380px;
   border-radius: 50%;
-  background: rgba(220, 193, 171, 0.25);
+  background: rgba(220, 193, 171, .5);
 }
 
 .card__fakelight {

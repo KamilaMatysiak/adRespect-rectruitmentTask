@@ -9,11 +9,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Rectruitment task for adRespect 2023" />
-    <meta name="author" content="Kamila Matysiak" />
-
-    
+    <meta name="author" content="Kamila Matysiak" />  
   </head>
   <body>
+
+    <!-- POP-UP GALLERY -->
 
     <div id="popup" class="popup-gallery">
         <button onclick="closeGallery()" class="popup-gallery__button popup-gallery__button--close"><span class="material-symbols-outlined">close</span></button>
@@ -21,6 +21,8 @@
         <img class="popup-gallery__img" id="popup-img">
         <button onclick="nextImg()" class="popup-gallery__button" id="next"><span class="material-symbols-outlined">arrow_forward</span></button>
     </div>
+
+    <!-- NAVBAR -->
 
     <header class="w-full bg-white h-[72px] md:fixed z-50">
       <nav class="flex justify-between bg-white h-full items-center py-4 w-5/6 mx-auto max-w-[1440px] lg:w-full lg:px-8 lg:relative lg:py-6">
@@ -39,7 +41,6 @@
                     <a class="dropdown-menu__option" href="#" >Aranżacje ogrodów i patio</a>
                     <a class="dropdown-menu__option" href="#" >Modernizacja ogrodu</a>
                     <a class="dropdown-menu__option" href="#" >Usługi ogrodnicze</a>
-                    
                 </div>
             </div>
             <a href="#about" class="nav__link">O firmie</a>
@@ -55,7 +56,10 @@
       </nav>
     </header>
 
+    <!-- INTRO -->
+
     <section class="section slider bg-beige">
+        <!-- SLIDE #1 -->
         <div class="slide md:h-fit md:flex-col">
             <div class="slide-content lg:mt-20 lg:max-w-lg lg:mx-8 align-middle xl:mr-8">
                 <div class="slide-content__text fade">
@@ -72,7 +76,8 @@
                 <div class="banner__img" style="background-image: url('assets/img/banner.webp')"></div>
             </div>
         </div>
-
+        
+        <!-- SLIDE #2 -->
         <div class="slide md:h-fit md:flex-col">
             <div class="slide-content lg:mt-20 lg:max-w-lg lg:mx-8 align-middle xl:mr-8">
                 <div class="slide-content__text fade">
@@ -90,6 +95,7 @@
             </div>
         </div>
 
+        <!-- SLIDE #3 -->
         <div class="slide md:h-fit md:flex-col">
             <div class="slide-content lg:mt-20 lg:max-w-lg lg:mx-8 align-middle xl:mr-8">
                 <div class="slide-content__text fade">
@@ -107,11 +113,14 @@
             </div>
         </div>
 
+        <!-- CONTROLS -->
         <div class="slider__buttons">
             <button class="slider__btn" onclick="prevSlide()"><span class="material-symbols-outlined">arrow_back</span></button>
             <button class="slider__btn" onclick="nextSlide()"><span class="material-symbols-outlined">arrow_forward</span></button>
         </div>
     </section>
+
+    <!-- OFFER -->
 
     <section id="offer" class="section my-[120px]">
         <div class="w-4/6 max-w-[1440px] mx-auto">
@@ -121,24 +130,25 @@
                 <p class="section__text my-8">Oferujemy kompletną obsługę inwestycji terenów zielonych. Projektujemy nowoczesne ogrody przydomowe oraz rezydencjonalne. Stworzymy dla Ciebie projekt, zwizualizujemy go i wcielimy w życie, a na każdym etapie posłużymy radą i wieloletnim doświadczeniem. </p>
             </div>
         </div>
+
         <div class="flex mx-auto justify-between w-5/6 max-w-[1440px] lg:flex-col">
             <div class="card">
                 <a href="#" class="card__content">
                     <img class="card__icon" src="assets/icons/offer-pencil.svg" alt="Projekty"/>
                     <h2 class="card__header">Projekty</h2>
                     <p class="card__text">Zaprojektujemy Twój ogród w nowoczesnym stylu i z najlepszym wykorzystaniem istniejącej przestrzeni.</p>
-                    <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
+                    <button class="button button--link button--arrow-right">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
                 </a>
                 <div class="card__light"></div>
                 <div class="card__fakelight"></div>
-
             </div>
+
             <div class="card">
                 <a href="#" class="card__content">
                     <img class="card__icon" src="assets/icons/offer-eye.svg" alt="Wizualizacje"/>
                     <h2 class="card__header">Wizualizacje</h2>
                     <p class="card__text">Przedstawimy Ci projekty koncepcyjne w postaci wirtualnego spaceru animowanego w technologii 3D.</p>
-                    <button class="button button--link">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
+                    <button class="button button--link button--arrow-right">Dowiedz się więcej <span class="material-symbols-outlined">arrow_forward</span></button>
                 </a>
                 <div class="card__light"></div>
                 <div class="card__fakelight"></div>
@@ -157,6 +167,8 @@
         </div>
     </section>
 
+    <!-- ABOUT -->
+
     <section id="about" class="section bg-green text-grey relative flex items-center h-[720px] lg:h-[1000px] lg:items-end">
         <div class="w-5/6 mx-auto py-4 flex items-center max-w-[1440px] gap-2 lg:w-full lg:ml-0 lg:bg-green lg:z-10 lg:h-[500px]">
             <div class="min-w-[650px] min-h-[720px] lg:hidden"></div>
@@ -171,6 +183,7 @@
         <div class="absolute top-0 left-0 w-[688px] h-[720px] lg:w-full lg:aspect-square bg-black bg-no-repeat bg-cover bg-center" style="background-image: url('assets/img/about.webp')"></div>
     </section>
 
+    <!-- MASONRY -->
 
     <section id="projects" class="section bg-beige pt-[120px]">
         <div class="w-5/6 mx-auto pl-12 max-w-[1440px] mb-[96px] md:w-full">
@@ -199,12 +212,14 @@
                 <button class="tile--hidden" onclick="openImg(17)"><img class="gallery-img" src="assets/img/mansonry-3.webp"></button>
                 <button class="tile--hidden" onclick="openImg(18)"><img class="gallery-img" src="assets/img/mansonry-1.webp"></button>
             </div>  
+            
             <div class="gradient" id="view-more">
                 <button onclick="viewMore()" id="more-btn" class="button button--outlined-black button--arrow-down mb-11">Rozwiń <span class="material-symbols-outlined">arrow_downward</span></button>
             </div>
         </div>
-
     </section>
+
+    <!-- CONTACT -->
 
     <section id="contact"  class="section my-[60px]" id="contact">
         <div class="w-5/6 max-w-[1040px] mx-auto bg-green text-grey">
@@ -217,6 +232,8 @@
             </div>
         </div>
     </section>
+
+    <!-- FOOTER -->
 
     <footer class="bg-black text-grey">
         <div class="w-5/6 mx-auto py-20">

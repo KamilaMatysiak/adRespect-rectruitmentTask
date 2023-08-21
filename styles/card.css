@@ -45,7 +45,7 @@
     width: 380px;
     height: 380px;
     border-radius: 50%;
-    background: rgba(220, 193, 171, 0.25);
+    background: rgba(220, 193, 171, .5);
 }
 
 .card__fakelight {

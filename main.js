@@ -72,6 +72,7 @@ function toggleMenu() {
   const menu = document.querySelector(".nav__menu");
   var isOpen = false;
 
+  //making sure navigation is visible after resize
   window.onresize = function () {
     var w = window.outerWidth;
     if (w > 1023) {
@@ -89,6 +90,8 @@ function toggleMenu() {
       }
     }
   };
+
+  //toggle
 
   if (event.target == closeIcon) {
     menuIcon.style.display = "block";
@@ -122,6 +125,7 @@ function nextSlide() {
 }
 
 function showSlides(index) {
+  //cleaning interval to reset the animation after click
   clearInterval(slideInterval);
 
   for (let i = 0; i < slides.length; i++) {

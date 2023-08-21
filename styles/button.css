@@ -89,11 +89,6 @@
     color: var(--green);
 }
 
-.button--link:hover span {
-    transform: translateX(8px);
-    transition: 1s all;
-}
-
 .button--arrow-down:hover span {
     animation: downInfinite 1.5s infinite;
 }
