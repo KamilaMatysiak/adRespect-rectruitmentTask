@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Recruitment Task for adRespect",
   "main": "main.js",
+  "type": "module",
   "scripts": {
     "build": "npx tailwindcss -i ./styles/global.css -o ./dist/style.css --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
