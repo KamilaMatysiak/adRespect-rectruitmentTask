@@ -75,7 +75,7 @@ function toggleMenu() {
   //making sure navigation is visible after resize
   window.onresize = function () {
     var w = window.outerWidth;
-    if (w > 1023) {
+    if (w > 1025) {
       menu.style.display = "flex";
     } else {
       if(isOpen) {
