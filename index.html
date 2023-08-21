@@ -11,7 +11,7 @@
     <meta name="description" content="Rectruitment task for adRespect 2023" />
     <meta name="author" content="Kamila Matysiak" />
 
-    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
+    
   </head>
   <body>
 
@@ -22,8 +22,8 @@
         <button onclick="nextImg()" class="popup-gallery__button" id="next"><span class="material-symbols-outlined">arrow_forward</span></button>
     </div>
 
-    <header class="w-full bg-white md:fixed z-50">
-      <nav class="flex justify-between items-center py-4 w-5/6 mx-auto max-w-[1440px] lg:w-full lg:px-8 lg:relative lg:py-6">
+    <header class="w-full bg-white h-[72px] md:fixed z-50">
+      <nav class="flex justify-between bg-white h-full items-center py-4 w-5/6 mx-auto max-w-[1440px] lg:w-full lg:px-8 lg:relative lg:py-6">
         <img src="assets/img/giarddesign.svg" alt="giarddesign logo"/>
         <div class="relative hidden lg:block lg:static">
             <button onclick="toggleMenu()" class="hamburger">
@@ -34,7 +34,7 @@
         <div class="nav__menu">
             <div class="dropdown">
                 <button class="nav__link flex">Oferta <span class="material-symbols-outlined nav__icon">expand_more</span></button>
-                <div class="dropdown-menu">
+                <div id="offer-dropdown" class="dropdown-menu"">
                     <a class="dropdown-menu__option" href="#" >Aranżacje balkonów i tarasów</a>
                     <a class="dropdown-menu__option" href="#" >Aranżacje ogrodów i patio</a>
                     <a class="dropdown-menu__option" href="#" >Modernizacja ogrodu</a>
@@ -250,7 +250,7 @@
             </div>
         </div>
     </footer>
-
+    <script src="https://cdn.jsdelivr.net/npm/macy@2"></script>
     <script src="main.js"></script>
   </body>
 </html>

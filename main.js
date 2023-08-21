@@ -70,17 +70,39 @@ function toggleMenu() {
   const menuIcon = document.querySelector(".hamburger__icon");
   const closeIcon = document.querySelector(".hamburger__icon--close");
   const menu = document.querySelector(".nav__menu");
+  var isOpen = false;
+
+  window.onresize = function () {
+    var w = window.outerWidth;
+    if (w > 1023) {
+      menu.style.display = "flex";
+    } else {
+      if(isOpen) {
+        menuIcon.style.display = "none";
+        closeIcon.style.display = "block";
+        menu.style.display = "flex";
+      }
+      else {
+        menuIcon.style.display = "block";
+        closeIcon.style.display = "none";
+        menu.style.display = "none";
+      }
+    }
+  };
 
   if (event.target == closeIcon) {
     menuIcon.style.display = "block";
     closeIcon.style.display = "none";
     menu.style.display = "none";
+    isOpen = false;
   } else {
     menuIcon.style.display = "none";
     closeIcon.style.display = "block";
     menu.style.display = "flex";
+    isOpen = true;
   }
 }
+
 
 // SLIDER //
 const slides = document.querySelectorAll(".slide");
